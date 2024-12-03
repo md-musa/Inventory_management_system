@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Purchase</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Base and Create Purchase CSS -->
+        <link rel="stylesheet" href="../styles/base.css">
+        <link rel="stylesheet" href="../styles/create-purchase.css">
+        <link rel="stylesheet" href="../styles/sidebar.css">
+    </head>
+
+    <body>
+        <div class="main-container">
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <h2>Create a Purchase</h2>
+                <ul>
+                    <li><a href="./dashboard.html"><span class="material-icons">dashboard</span> Dashboard</a></li>
+                    <li><a href="./product-list.html"><span class="material-icons">inventory</span> Product List</a>
+                    </li>
+                    <li><a href="./add-product.html" class="active"><span class="material-icons">add_box</span> Add
+                            Product</a></li>
+                    <li><a href="./create-purchase.html"><span class="material-icons">shopping_cart</span> Create
+                            Purchase</a></li>
+                    <li><a href="./transaction-history.html"><span class="material-icons">history</span> Transaction
+                            History</a>
+                    </li>
+                    <li><a href="./staff-list.html"><span class="material-icons">people</span> Staff List</a></li>
+                    <li><a href="./notification.html"><span class="material-icons">notifications</span> Notification</a>
+                    </li>
+                    <li><a href="./help-and-support.html"><span class="material-icons">help_outline</span> Help and
+                            Support</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Header -->
+                <header class="header">
+                    <div class="header-left">
+                        <h1>Inventory System</h1>
+                    </div>
+                    <div class="header-right">
+                        <!-- Notification Section -->
+                        <div class="notification">
+                            <span class="material-icons">notifications</span>
+                            <span class="notification-count">3</span>
+                        </div>
+
+                        <!-- User Profile Section -->
+                        <div class="profile">
+                            <div class="user-info">
+                                <span class="user-name">Robin Khan</span>
+                                <span class="user-role">Admin</span>
+                            </div>
+                            <img src="https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp"
+                                alt="Profile Picture" class="profile-picture">
+                        </div>
+                    </div>
+                </header>
+                <h1>Create Purchase</h1>
+
+                <!-- Add Product Section -->
+                <div class="product-input">
+                    <input type="text" placeholder="Enter Product ID" class="input-field">
+                    <button class="button button-primary">Add Product</button>
+                    <button class="button button-secondary">
+                        <span class="material-icons">qr_code_scanner</span> Scan QR Code
+                    </button>
+                </div>
+
+                <!-- Product Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td><img src="" alt="Product A" class="product-img"></td>
+                            <td>Product A</td>
+                            <td><input type="number" value="2" class="quantity-input" disabled></td>
+                            <td>$10.00</td>
+                            <td>$20.00</td>
+                            <td>
+                                <button class="button button-secondary">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td><img src="" alt="Product B" class="product-img"></td>
+                            <td>Product B</td>
+                            <td><input type="number" value="1" class="quantity-input" disabled></td>
+                            <td>$15.00</td>
+                            <td>$15.00</td>
+                            <td>
+                                <button class="button button-secondary">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Total Section -->
+                <div class="total-section">
+                    <p>Total Items: <span>3</span></p>
+                    <p>Total Price: <span>$35.00</span></p>
+                </div>
+
+                <!-- Customer Info Section -->
+                <div class="customer-info">
+                    <h3>Customer Information</h3>
+                    <input type="text" placeholder="Customer Name" class="input-field">
+                    <input type="text" placeholder="Customer Contact" class="input-field">
+                    <textarea placeholder="Additional Notes" class="input-field"></textarea>
+                    <button class="button button-primary">Complete Purchase</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

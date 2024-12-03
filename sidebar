@@ -1,0 +1,38 @@
+<nav class="sidebar">
+    <h2>Inventory System</h2>
+    <ul>
+        <li><a href="./dashboard.html"><span class="material-icons">dashboard</span> Dashboard</a></li>
+        <li><a href="./product-list.html"><span class="material-icons">inventory</span> Product List</a></li>
+        <li><a href="./add-product.html" class="active"><span class="material-icons">add_box</span> Add Product</a></li>
+        <li><a href="./create-purchase.html"><span class="material-icons">shopping_cart</span> Create Purchase</a></li>
+        <li><a href="./transaction-history.html"><span class="material-icons">history</span> Transaction History</a>
+        </li>
+        <li><a href="./staff-list.html"><span class="material-icons">people</span> Staff List</a></li>
+        <li><a href="./notification.html"><span class="material-icons">notifications</span> Notification</a></li>
+        <li><a href="./help-and-support.html"><span class="material-icons">help_outline</span> Help and Support</a></li>
+    </ul>
+</nav>
+
+<!-- header -->
+
+<header class="header">
+    <div class="header-left">
+        <h1>Inventory System</h1>
+    </div>
+    <div class="header-right">
+        <!-- Notification Section -->
+        <div class="notification">
+            <span class="material-icons">notifications</span>
+            <span class="notification-count">3</span>
+        </div>
+
+        <!-- User Profile Section -->
+        <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture" class="profile-picture">
+            <div class="user-info">
+                <span class="user-name">John Doe</span>
+                <span class="user-role">Admin</span>
+            </div>
+        </div>
+    </div>
+</header>
