@@ -4,7 +4,7 @@
 .search-section {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px 50px;
 }
 
 .input-field {
@@ -61,4 +61,34 @@ table td:last-child.paid {
 
 table td:last-child.pending {
   color: red;
+}
+
+/* Payment Status Styles */
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.status.paid span {
+  background-color: #a8f8ab;
+  color: #17a21b;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.status.pending span {
+  background-color: #f8f296;
+  color: #856f0c;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.status.canceled span {
+  background-color: #f8a596;
+  color: #a22c17;
+  padding: 2px 10px;
+  border-radius: 8px;
 }

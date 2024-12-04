@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Base and Transaction History CSS -->
         <link rel="stylesheet" href="../styles/base.css">
-        <link rel="stylesheet" href="../styles/transaction-history.css">
+        <link rel="stylesheet" href="../styles/staff-list.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
     </head>
 
@@ -66,60 +66,63 @@
                     </div>
                 </header>
 
-                <!-- Search Section -->
-                <div class="search-section">
-                    <input type="text" placeholder="Search by Transaction ID or Customer Name" class="input-field">
-                    <button class="button button-primary">Search</button>
-                </div>
+                <div>
+                    <div class="staff-sections">
+                        <!-- Manager List Section -->
+                        <div class="section managerlist">
+                            <h2>Manager List</h2>
+                            <div class="staff-card">
+                                <img src="https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp"
+                                    alt="Manager 1" class="staff-img">
+                                <h3>John Doe</h3>
+                                <p>Role: Shop Owner/Manager</p>
+                            </div>
+                            <div class="staff-card">
+                                <img src="https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg="
+                                    alt="Manager 2" class="staff-img">
+                                <h3>Jane Smith</h3>
+                                <p>Role: Manager</p>
+                            </div>
+                        </div>
 
-                <!-- Transaction Table -->
-                <div class="section">
-                    <!-- <h2>Transactions</h2> -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Transaction ID</th>
-                                <th>Total Items</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                                <th>Customer</th>
-                                <th>Total Price</th>
-                                <th>Payment Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#1234</td>
-                                <td>3</td>
-                                <td>2024-12-03</td>
-                                <td>10:15 AM</td>
-                                <td>John Doe</td>
-                                <td>$75</td>
-                                <td class="status paid"><span>Paid</span></td>
-                            </tr>
-                            <tr>
-                                <td>#1235</td>
-                                <td>5</td>
-                                <td>2024-12-03</td>
-                                <td>1:45 PM</td>
-                                <td>Jane Smith</td>
-                                <td>$150</td>
-                                <td class="status pending"><span>Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>#1236</td>
-                                <td>2</td>
-                                <td>2024-12-03</td>
-                                <td>3:30 PM</td>
-                                <td>Mike Johnson</td>
-                                <td>$50</td>
-                                <td class="status canceled"><span>Canceled</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <!-- Sales Staff Section -->
+                        <div class="section salestaff">
+                            <h2>Sales Staff</h2>
+                            <div class="staff-card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTZZMVvqk-mQz-uUCvsFatySpqiDXBBgc87ktTKqv6HHOmKEWfiHaEEAWEqbm-ac14hm4&usqp=CAU"
+                                    alt="Sales Staff 1" class="staff-img">
+                                <h3>Sarah Lee</h3>
+                                <p>Role: Sales Associate</p>
+                            </div>
+                            <div class="staff-card">
+                                <img src="https://cdn.actualicese.com/Imagen/I-Comerciante-empresaria-formalizacion.jpg"
+                                    alt="Sales Staff 2" class="staff-img">
+                                <h3>Michael Brown</h3>
+                                <p>Role: Sales Associate</p>
+                            </div>
+                        </div>
+
+                        <!-- Stock Keeper Section -->
+                        <div class="section stockkeeper">
+                            <h2>Stock Keeper</h2>
+                            <div class="staff-card">
+                                <img src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Storekeeper.jpg"
+                                    alt="Stock Keeper 1" class="staff-img">
+                                <h3>Amy Green</h3>
+                                <p>Role: Stock Keeper</p>
+                            </div>
+                            <div class="staff-card">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D12AQEX9h8SJuQqSA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1714716252887?e=2147483647&v=beta&t=UqZE7CfAYSxNdbCqdu_UbKBgAqml6IHCfWlHFonQsT8"
+                                    alt="Stock Keeper 2" class="staff-img">
+                                <h3>David White</h3>
+                                <p>Role: Stock Keeper</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        </div>
     </body>
 
 </html>

@@ -4,20 +4,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Transaction History</title>
+        <title>Notification Page</title>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Base and Transaction History CSS -->
+        <!-- CSS -->
         <link rel="stylesheet" href="../styles/base.css">
-        <link rel="stylesheet" href="../styles/transaction-history.css">
+        <link rel="stylesheet" href="../styles/notification.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
     </head>
 
     <body>
         <div class="main-container">
-
             <!-- Sidebar -->
             <nav class="sidebar">
                 <div class="logo-container">
@@ -34,18 +33,19 @@
                     <li><a href="./transaction-history.html"><span class="material-icons">history</span> Transaction
                             History</a></li>
                     <li><a href="./staff-list.html"><span class="material-icons">people</span> Staff List</a></li>
-                    <li><a href="./notification.html"><span class="material-icons">notifications</span> Notification</a>
-                    </li>
+                    <li><a href="./notification.html" class="active"><span class="material-icons">notifications</span>
+                            Notification</a></li>
                     <li><a href="./help-and-support.html"><span class="material-icons">help_outline</span> Help &
                             Support</a></li>
                 </ul>
             </nav>
+
             <!-- Main Content -->
-            <div class="content">
+            <main class="content">
                 <!-- Header -->
                 <header class="header">
                     <div class="header-left">
-                        <h1>Transaction History</h1>
+                        <h1>Notification</h1>
                     </div>
                     <div class="header-right">
                         <a href="./notification.html" class="notification-link">
@@ -65,60 +65,36 @@
                         </div>
                     </div>
                 </header>
-
-                <!-- Search Section -->
-                <div class="search-section">
-                    <input type="text" placeholder="Search by Transaction ID or Customer Name" class="input-field">
-                    <button class="button button-primary">Search</button>
+                <div class="noti-container">
+                    <div class="noti-card">
+                        <div class="noti-icon">
+                            <span class="material-icons">notifications</span>
+                        </div>
+                        <div class="noti-details">
+                            <h3>New Product Added</h3>
+                            <p>5 minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="noti-card">
+                        <div class="noti-icon">
+                            <span class="material-icons">shopping_cart</span>
+                        </div>
+                        <div class="noti-details">
+                            <h3>Purchase Completed</h3>
+                            <p>2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="noti-card">
+                        <div class="noti-icon">
+                            <span class="material-icons">error</span>
+                        </div>
+                        <div class="noti-details">
+                            <h3>Low Stock Alert</h3>
+                            <p>Yesterday</p>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Transaction Table -->
-                <div class="section">
-                    <!-- <h2>Transactions</h2> -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Transaction ID</th>
-                                <th>Total Items</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                                <th>Customer</th>
-                                <th>Total Price</th>
-                                <th>Payment Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#1234</td>
-                                <td>3</td>
-                                <td>2024-12-03</td>
-                                <td>10:15 AM</td>
-                                <td>John Doe</td>
-                                <td>$75</td>
-                                <td class="status paid"><span>Paid</span></td>
-                            </tr>
-                            <tr>
-                                <td>#1235</td>
-                                <td>5</td>
-                                <td>2024-12-03</td>
-                                <td>1:45 PM</td>
-                                <td>Jane Smith</td>
-                                <td>$150</td>
-                                <td class="status pending"><span>Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>#1236</td>
-                                <td>2</td>
-                                <td>2024-12-03</td>
-                                <td>3:30 PM</td>
-                                <td>Mike Johnson</td>
-                                <td>$50</td>
-                                <td class="status canceled"><span>Canceled</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            </main>
         </div>
     </body>
 

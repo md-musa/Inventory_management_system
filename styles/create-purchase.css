@@ -4,15 +4,20 @@
 .product-input {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .input-field {
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: var(--border-radius);
-  width: 100%;
+  width: 70%;
+}
+.qr-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Product Table */
@@ -60,9 +65,10 @@ table td {
 /* Total Section */
 .total-section {
   margin-top: 20px;
-  text-align: right;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
+  background-color: white;
 }
 
 .total-section p {
@@ -71,7 +77,12 @@ table td {
 
 /* Customer Info */
 .customer-info {
-  margin-top: 30px;
+  background-color: white;
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 1px rgb(244, 244, 244);
 }
 
 .customer-info h3 {
@@ -82,6 +93,6 @@ table td {
   margin-bottom: 10px;
 }
 
-.customer-info button {
+/* .customer-info button {
   margin-top: 10px;
-}
+} */

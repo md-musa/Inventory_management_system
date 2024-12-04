@@ -3,8 +3,8 @@
 /* Search Bar */
 .search-bar {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 20px;
+  /* justify-content: flex-start; */
+  margin: 40px 20px;
 }
 
 .search-bar input {

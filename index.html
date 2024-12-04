@@ -17,8 +17,14 @@
     <body>
         <div class="login-container">
             <div class="login-card">
+                <!-- Logo and Name -->
+                <div class="logo-container">
+                    <img class="logo" src="../images/logo.png" alt="Logo">
+                    <p>StockFlow</p>
+                </div>
+
                 <h1>Login</h1>
-                <form class="login-form">
+                <form class="login-form" action="./pages/dashboard.html">
                     <div class="form-group">
                         <label for="username">Username/Email</label>
                         <input type="text" id="username" placeholder="Enter your username or email" class="input-field">
@@ -27,7 +33,7 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" placeholder="Enter your password" class="input-field">
                     </div>
-                    <button class="button button-primary"><a href="./pages/dashboard.html">Login</a></button>
+                    <button class="button button-primary">Login</button>
                 </form>
             </div>
         </div>
