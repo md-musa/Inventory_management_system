@@ -1,16 +1,10 @@
 :root {
-  /* Colors */
-  --primary-bg: #1f558b; /* Primary background color */
-  /*--primary-bg: #2c7be5;  Primary background color */
-  --secondary-bg: #f4f5f7; /* Secondary background color */
-  --primary-text: #ffffff; /* Primary text color */
-  --secondary-text: #333333; /* Secondary text color */
-  --accent-color: #5c6bc0; /* Accent color for secondary actions */
-
-  /* Borders and Radius */
+  --primary-bg: #1f558b;
+  --secondary-bg: #f4f5f7;
+  --primary-text: #ffffff;
+  --secondary-text: #333333;
+  --accent-color: #5c6bc0;
   --border-radius: 8px;
-
-  /* Fonts */
   --font-family: 'Roboto', sans-serif;
 }
 
@@ -64,7 +58,7 @@ body {
 }
 
 .button-primary:hover {
-  background-color: darken(var(--primary-bg), 10%);
+  background-color: #3e73a8;
 }
 
 /* Secondary Button */
@@ -75,7 +69,7 @@ body {
 }
 
 .button-secondary:hover {
-  background-color: darken(var(--accent-color), 10%);
+  background-color: #1f558b;
 }
 
 /* Button Hover Effects */

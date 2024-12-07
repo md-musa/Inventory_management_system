@@ -1,5 +1,3 @@
-/* styles/create-purchase.css */
-
 /* Input Section */
 .product-input {
   display: flex;
@@ -92,7 +90,3 @@ table td {
 .customer-info .input-field {
   margin-bottom: 10px;
 }
-
-/* .customer-info button {
-  margin-top: 10px;
-} */

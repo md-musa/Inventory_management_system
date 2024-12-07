@@ -142,11 +142,11 @@ table th {
 
 .product-stock {
   font-size: 0.9rem;
-  color: #e74c3c; /* Red color for low stock */
+  color: #e74c3c;
 }
 
 .product-price {
   font-size: 1rem;
-  color: #2ecc71; /* Green for price */
+  color: #2ecc71;
   font-weight: bold;
 }
